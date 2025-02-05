@@ -42,7 +42,7 @@ section {
     filter: drop-shadow(0 0 10px #8ce9d2);
 }
 .navbar .logo{
-    width: 75px;
+        width: 75px;
     height: 75px;
     position: absolute;
     left: 1rem;
@@ -120,7 +120,6 @@ h1:hover{
     justify-items: center;
     align-items: center;
     height: auto;
-
 }
 .about h2{
     color: var(--primary-color);
@@ -137,7 +136,7 @@ h1:hover{
     font-weight: bold;
     color: var(--second-color);
     margin-bottom: 1rem;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 .about .container {
     display: flex;
@@ -147,6 +146,13 @@ h1:hover{
     align-items: center;
     height: auto;
 
+}
+.about .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
 }
 .about .txt{
     border: 5px solid var(--primary-color);
@@ -162,7 +168,7 @@ h1:hover{
     .about {
         height: auto;
         padding-bottom: 2rem;
-        padding-top: 1rem;
+        padding: 1rem;
     }
     .about h2{
         font-size: 2.5rem;
@@ -171,13 +177,12 @@ h1:hover{
     .about h3{
         font-size: 1.7rem;
     }
-    .container .txt p {
-        font-size: 0.7rem;
-        width: 95%;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-    }
+    .about p {
+        font-weight: bold;
+        color: var(--second-color);
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        }
     .about .container {
         display: flex;
         flex-direction:column;
@@ -198,10 +203,9 @@ h1:hover{
         width: 80%;
         margin: 0.5rem;
         padding: 4px;
-        height: 400px;
+        height: 500px;
     }
 }
-
                 /* plans */
 .plans {
     justify-content: center;
@@ -210,6 +214,7 @@ h1:hover{
     text-align: center;
     height: auto;
     margin-bottom: 5rem;
+
 }
 .plans h2 {
     color: white;
@@ -218,9 +223,14 @@ h1:hover{
 .plans h3 {
     margin: 2rem;
     font-size: 2.7rem;
+    font-size: 1.5rem;
     color: white;
 }
+.plans p {
+    color: white;
+    font-weight: bold;
 
+}
 .plans .container {
     justify-content: center;
     justify-items: center;
@@ -232,7 +242,7 @@ h1:hover{
 }
 .plans .plan {
     width: 25%;
-    height: 900px;
+    height: 600px;
     border: 4px solid white;
     border-radius: 2rem;
     margin: 2rem;
@@ -245,61 +255,32 @@ h1:hover{
     transform: scale(1.1);
     box-shadow: 0 0 25px rgb(0, 0, 0);
 }
-.plans .plan p {
-    font-size: 1.3rem;
-    color: whitesmoke;
-    font-family: var(--font-family);
-    font-weight: bold;
-}
 @media screen and (max-width: 768px){
-    .plans {
-        height: auto;
-        padding-bottom: 2rem;
-        padding-top: 1rem;
-    }
-    .plans .plan {
-        height: 395px;
-        margin: 0.9rem;
-        border-radius: 0.6rem;
-        border: 3px solid white;
-        box-shadow:6px 6px 10px rgb(0, 0, 0);
+    .plans .plan{
+        margin: 0.6rem;
         width: 80%;
-        text-align: center;
-        padding: 0;
-    }
-    .plans .plan:hover {
-        transform: scale(1.032);
+        height: auto;
+        margin-top: 2rem;
     }
     .plans .container {
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
     }
-    .plans h2 {
-        font-size: 2.5rem;
-    }
-    .plans h3 {
-        font-size: 1.3rem;
-        text-align: center;
-        margin: 0;
-        margin-top: 1rem;
-        margin-bottom: 0.8rem
-    }
-    .plans .plan p {
-        font-size: 12px;
-        font-weight: bold;
+    .plans .plan:hover {
+        cursor: pointer;
+        transform: scale(1.03);
+        box-shadow: 0 0 25px rgb(0, 0, 0);
     }
 }
 
                 /* proyects */
 .proyects {
     text-align: center;
-    justify-content: center;
-    height: auto;
 }
 .proyects h2{
     color: white;
@@ -308,7 +289,14 @@ h1:hover{
     margin-top: 2rem;
 }
 
+.proyects p {
+    color: var(--second-color);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 3rem
+}
 .proyects .proyectos{
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -318,6 +306,7 @@ h1:hover{
 .proyects .proyecto {
     background: white;
     border-radius: 1rem;
+    border-radius: 2rem;
     width: 30%;
     height: 250px;
     margin: 1rem;
